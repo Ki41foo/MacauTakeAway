@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#8BC34A</color>-->
+    <color name="colorPrimary">#D4A71E</color>
+    <color name="colorPrimaryDark">#D4A71E</color>
+    <!--<color name="colorPrimaryDark">#689F38</color>-->
+    <color name="colorAccent">#F44336</color>
+    <color name="colorAccentDark">#D32F2F</color>
+    <color name="light_green">#668BC34A</color>
+    <color name="colorPrimaryLight">#EEBC1F</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="light_text">#c2c2c2</color>
+    <color name="divider">#cfcfcf</color>
+
+    <color name="bg_white">#f8f8f8</color>
+
+    <color name="order_status_new">#F44336</color>
+    <color name="order_status_produce">#5677fc</color>
+    <color name="order_status_rejected">#000000</color>
+    <color name="order_status_wait_for_delivery">#FF4081</color>
+    <color name="order_status_delivery">#8BC34A</color>
+    <color name="order_status_finished">#77727272</color>
+    <color name="order_status_timeout">#EEBC1F</color>
+
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#5677fc</color>
+    <color name="deep_blue">#3637fc</color>
+
+
+
+</resources>

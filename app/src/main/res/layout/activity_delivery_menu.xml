@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <com.gvbyc.ki41foo.delivery.widget.DetailTextView
+            android:visibility="gone"
+            android:background="@color/white"
+            android:padding="2dp"
+            android:id="@+id/notice"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/info_card_secondary_text_size"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/appbar"
+        android:layout_marginBottom="56dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="23"
+            android:background="@color/bg_white">
+
+        </ListView>
+
+
+        <com.gvbyc.ki41foo.delivery.widget.PinnedHeaderListView
+            android:id="@+id/pinnedListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@android:color/white">
+
+        </com.gvbyc.ki41foo.delivery.widget.PinnedHeaderListView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/dim_foreground_disabled_material_light">
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_cart"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_light_background"
+        android:translationY="200dp">
+
+        <Button
+            android:paddingTop="18dp"
+            android:id="@+id/iv_cart"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/round_primary"
+            android:translationY="-12dp"
+            android:contentDescription="@null"
+            />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="購物車是空的"
+            android:textSize="16sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/iv_cart"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/total2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/total"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/rect_red"
+            android:id="@+id/btn_right"
+            android:gravity="center"
+            android:text="結算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/info_card_primary_text_size"
+            android:layout_width="100dp"
+            android:layout_height="36dp" />
+
+        <ListView
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@id/iv_cart"
+            android:id="@+id/temp_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/PBTheme"
+        />
+
+
+</RelativeLayout>

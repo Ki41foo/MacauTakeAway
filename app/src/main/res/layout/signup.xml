@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        app:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:padding="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:textSize="24sp"
+                android:text="註冊"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="36dp"
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="澳門(+853)"
+                android:id="@+id/prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/phone"
+                android:maxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="你的電話號碼"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_verify"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="發送短信驗證碼"
+                 />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_code"
+                android:layout_toLeftOf="@id/btn_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="收到的4位驗證碼"
+                android:maxLength="4"
+                android:inputType="number"
+                android:singleLine="true"
+                />
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="12sp"
+            android:text="注冊即表示已同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:paddingLeft="0dp"
+            android:textSize="12sp"
+            android:id="@+id/protocol"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="《餸上門APP使用條款及隱私聲明》"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

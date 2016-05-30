@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:clipToPadding="false">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.4"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                     />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/secondary_text"
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起送"
+                    android:textSize="@dimen/info_card_third_text_size"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+                <TextView
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@id/tv_1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$80"
+                    android:textSize="@dimen/info_card_primary_text_size"
+
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:singleLine="true"
+                    android:text="金悦轩海鲜大酒家"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/info_card_primary_text_size" />
+
+                <TextView
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:singleLine="true"
+                    android:text=" 500m"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/info_card_secondary_text_size" />
+
+                <TextView
+                    android:layout_alignLeft="@id/distance"
+                    android:layout_below="@id/distance"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="超出配送範圍"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:background="@drawable/rect_grey"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/info_card_secondary_text_size" />
+
+                <TextView
+                    android:background="@drawable/rect_red"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_1"
+                    android:id="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/info_card_secondary_text_size" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
+

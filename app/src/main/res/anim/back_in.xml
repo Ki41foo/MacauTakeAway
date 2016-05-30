@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="200"
+
+    >
+
+
+    <scale
+
+        android:fromXScale="0.95"
+        android:toXScale="1.0"
+        android:fromYScale="0.95"
+        android:toYScale="1.0"
+        android:pivotX="50%p"
+        android:pivotY="50%p" />
+    <alpha xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromAlpha="0.7"
+        android:toAlpha="1.0" />
+
+
+</set>
+
+    <!--<CarPark title="停車場車位顯示">-->
+
+    <!--<Car_park_info--><!--ID="6033"--><!--name="下環街市"--><!--CP_EName="Auto-Silo do Mercado de S. Lourenço"--><!--CP_PName="Auto-Silo do Mercado de S. Lourenço"--><!--Car_CNT="0"--><!--MB_CNT="69"--><!--Time="3/24/2015 7:35:58 PM"--><!--updatetime_cn="9/10/2014 4:45:05 PM"--><!--updatetime_pt="9/10/2014 4:48:06 PM">-->
+
+    <!--</Car_park_info>-->
+
+    <!--</CarPark>-->
+
+
+

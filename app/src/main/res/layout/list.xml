@@ -1,0 +1,11 @@
+<com.gvbyc.ki41foo.delivery.widget.MyRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recyclerView"
+    >
+
+
+
+    </com.gvbyc.ki41foo.delivery.widget.MyRecyclerView>
+
+

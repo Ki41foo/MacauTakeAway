@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">餸上門</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">搜尋</string>
+
+    <string-array name="prefixes">
+        <item>+853</item>
+        <item>+86</item>
+        <item>+852</item>
+    </string-array>
+</resources>

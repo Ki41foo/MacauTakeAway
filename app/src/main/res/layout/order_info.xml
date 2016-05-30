@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:clipToPadding="false">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.4"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                     />
+
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:singleLine="true"
+                    android:text="金悦轩海鲜大酒家"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/info_card_primary_text_size" />
+
+
+
+                <TextView
+                    android:layout_below="@id/name"
+                    android:lineSpacingExtra="2dp"
+                    android:id="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/name"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:text=""
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/info_card_primary_text_size" />
+
+                <TextView
+                    android:layout_marginRight="4dp"
+                    android:padding="4dp"
+                    android:layout_alignTop="@id/tv_3"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="狀態：商家已經接單"
+                    android:textSize="@dimen/info_card_primary_text_size"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+                <TextView
+                    android:textSize="@dimen/info_card_primary_text_size"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/icon"
+                    android:id="@+id/time"
+                    android:maxLines="2"
+                    android:textColor="@color/secondary_text"
+                    android:ellipsize="end"
+                    android:text="下單時間："
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        >
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+
+            android:id="@+id/img"
+            android:layout_centerVertical="true"
+            android:layout_width="52dp"
+            android:layout_height="52dp" />
+
+        <TextView
+            android:maxLines="1"
+
+            android:text="88899888989898989898989898989898989898"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginTop="8dp"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/img"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$18/份"
+            android:textSize="@dimen/info_card_primary_text_size"
+            android:textColor="@color/secondary_text" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_marginRight="8dp"
+            android:layout_alignBottom="@id/img"
+            android:text="+"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_primary"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:visibility="invisible"
+
+            android:layout_marginRight="8dp"
+            android:layout_alignBottom="@id/img"
+            android:layout_toLeftOf="@id/btn_plus"
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/info_card_primary_text_size"
+            android:textColor="#000000" />
+
+        <Button
+            android:visibility="invisible"
+            android:layout_marginRight="8dp"
+            android:layout_alignBottom="@id/img"
+            android:layout_toLeftOf="@id/count"
+            android:id="@+id/btn_minus"
+            android:text="-"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_grey"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_alignBottom="@id/img"
+            android:id="@+id/timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:text="非點餐時段"
+            android:gravity="center"
+            android:padding="4dp"
+            android:background="@drawable/rect_grey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/info_card_primary_text_size" />
+
+    </RelativeLayout>
+
+</FrameLayout>
